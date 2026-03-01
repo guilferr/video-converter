@@ -36,7 +36,7 @@ def main():
         output_file = os.path.join(output_dir, f"{file_name}.mp4")
 
         if os.path.exists(output_file):
-            break
+            continue
 
         print(f"Converting {ts_file} to {output_file}")
         convert_ts_to_mp4(ts_file, output_file)
